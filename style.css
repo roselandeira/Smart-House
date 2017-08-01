@@ -1,0 +1,104 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  background: 	#a8e6cf;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+/*http://fontawesome.io/cheatsheet/*/
+#temperature.t-0 .icon:before {
+  content: '\f2cb';
+}
+#temperature.t-1 .icon:before {
+  content: '\f2ca';
+}
+#temperature.t-2 .icon:before {
+  content: '\f2c9';
+}
+#temperature.t-3 .icon:before {
+  content: '\f2c8';
+}
+#temperature.t-4 .icon:before {
+  content: '\f2c7';
+}
+#temperature .status:after {
+  content: '°C';
+  background: none;
+}
+
+#rain.r-no .icon:before {
+  content: '\f185';
+}
+#rain.r-yes .icon:before {
+  content: '\f043';
+}
+
+#smoke.s-no .icon:before {
+  content: '\f132';
+}
+#smoke.s-yes .icon:before {
+  content: '\f071';
+}
+
+#gas.g-no .icon:before {
+  content: '\f132';
+}
+#gas.g-yes .icon:before {
+  content: '\f071';
+}
+
+#extLight.el-no .icon:before {
+  content: '\f185';
+}
+#extLight.el-yes .icon:before {
+  content: '\f0eb';
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: 	#dcedc1;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.item .title {
+  font-size: 2em;
+  padding: 10px;
+}
+.item .display {
+  background: rgb(150,255,0);
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+}
+.item .display .icon {
+  font-size: 2em;
+}
+.item .display .status {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header img {
+	width: 40px;
+	height: 40px;
+	position: relative;
+  margin-right: 10px;
+}
+
+header {
+	font-size: 20px;
+	line-height: 50px;
+	font-weight: 100;
+	letter-spacing: 2px;
+}
